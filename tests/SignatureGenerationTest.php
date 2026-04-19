@@ -43,7 +43,7 @@ class SignatureGenerationTest extends TestCase
     /** @test */
     public function it_can_sign_an_url_that_expires_at_a_certain_time()
     {
-        $expiration = DateTime::createFromFormat('d/m/Y H:i:s', '10/08/2025 18:15:44',
+        $expiration = DateTime::createFromFormat('d/m/Y H:i:s', '10/08/2099 18:15:44',
             new DateTimeZone('Europe/Brussels'));
 
         /** @noinspection PhpUnhandledExceptionInspection */
